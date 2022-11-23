@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MyNote</string>
+    <string name="menu_title">Folder List</string>
+    <string name="no_note">There is no note available \n Tap on "+" to add new note</string>
+    <string name="add_note">Add a new note</string>
 </resources>
