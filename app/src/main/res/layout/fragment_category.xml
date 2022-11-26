@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NoteFragment">
+    tools:context=".CategoryFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -17,7 +17,7 @@
             android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/img_category"
+                android:id="@+id/img_home"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="?attr/colorOnPrimary"
@@ -27,7 +27,7 @@
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_folder" />
+                app:srcCompat="@drawable/ic_home" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/img_search"
@@ -69,17 +69,17 @@
                 app:srcCompat="@drawable/ic_more" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_note_title"
+                android:id="@+id/tv_home_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
                 android:background="?attr/colorOnPrimary"
                 android:gravity="center_vertical"
-                android:text="@string/note_list"
+                android:text="@string/category_list"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:tint="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/img_category"
+                app:layout_constraintStart_toEndOf="@+id/img_home"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -123,7 +123,7 @@
 
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/img_add_note"
+            android:id="@+id/img_add_category"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="?attr/colorSecondaryContainer"
@@ -135,22 +135,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/gl3"
-            app:srcCompat="@drawable/ic_note_add" />
+            app:srcCompat="@drawable/ic_category_add" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_no_note"
+            android:id="@+id/tv_no_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/no_note"
+            android:text="@string/no_category"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="?attr/colorOnSecondaryContainer"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_add_note"
+            app:layout_constraintTop_toBottomOf="@+id/img_add_category"
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

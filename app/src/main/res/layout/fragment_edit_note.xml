@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NoteFragment">
+    tools:context=".EditNoteFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -17,43 +17,43 @@
             android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/img_category"
+                android:id="@+id/img_back"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="?attr/colorOnPrimary"
-                android:contentDescription="@string/CategoryFragment"
+                android:contentDescription="@string/back_description"
                 android:tint="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_folder" />
+                app:srcCompat="@drawable/ic_back" />
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/img_search"
+                android:id="@+id/img_undo"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="?attr/colorOnPrimary"
-                android:contentDescription="@string/search_description"
+                android:contentDescription="@string/undo_description"
                 android:tint="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintEnd_toStartOf="@+id/img_refresh"
+                app:layout_constraintEnd_toStartOf="@+id/img_share"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_search" />
+                app:srcCompat="@drawable/ic_undo" />
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/img_refresh"
+                android:id="@+id/img_share"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="?attr/colorOnPrimary"
-                android:contentDescription="@string/refresh_description"
+                android:contentDescription="@string/share_description"
                 android:tint="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toStartOf="@+id/img_more"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_refresh" />
+                app:srcCompat="@drawable/ic_share" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/img_more"
@@ -69,17 +69,17 @@
                 app:srcCompat="@drawable/ic_more" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_note_title"
+                android:id="@+id/tv_edit_note_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
                 android:background="?attr/colorOnPrimary"
                 android:gravity="center_vertical"
-                android:text="@string/note_list"
+                android:text="@string/edit_note_title"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:tint="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/img_category"
+                app:layout_constraintStart_toEndOf="@+id/img_back"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -93,66 +93,19 @@
         android:background="?attr/colorSecondaryContainer"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="?attr/colorOnPrimaryContainer"
-            android:backgroundTint="?attr/colorPrimaryContainer"
-            android:contentDescription="@string/add_note"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:layout_margin="16dp"
+            android:hint="@string/note_hint"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@android:drawable/ic_input_add" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/gl2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.60" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/gl3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.40" />
-
-
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/img_add_note"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="?attr/colorSecondaryContainer"
-            android:contentDescription="@string/CategoryFragment"
-            android:scaleType="fitCenter"
-            android:tint="?attr/colorPrimary"
-            app:layout_constraintBottom_toTopOf="@+id/gl2"
-            app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/gl3"
-            app:srcCompat="@drawable/ic_note_add" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_no_note"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@string/no_note"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="?attr/colorOnSecondaryContainer"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_add_note"
-            app:layout_constraintVertical_bias="0.0" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
