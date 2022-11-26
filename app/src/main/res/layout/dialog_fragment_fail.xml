@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".SuccessfullDialogFragment">
+    tools:context=".FailDialogFragment">
 
     <View
         android:id="@+id/view_1"
@@ -18,30 +18,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/img_check"
+        android:id="@+id/img_cancel"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginHorizontal="20dp"
-        android:background="?attr/colorPrimary"
+        android:background="@color/error"
         android:padding="15dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@id/view_1"
         app:layout_constraintStart_toStartOf="@id/view_1"
         app:layout_constraintTop_toTopOf="@id/view_1"
-        app:srcCompat="@drawable/ic_check_circle" />
+        app:srcCompat="@drawable/ic_cancel_circle" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_successfully"
+        android:id="@+id/tv_fail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/category_successfully_add_dialog"
+        android:text="@string/category_Failure_add_dialog"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@id/view_1"
         app:layout_constraintEnd_toEndOf="@id/view_1"
         app:layout_constraintStart_toStartOf="@id/view_1"
-        app:layout_constraintTop_toBottomOf="@+id/img_check" />
+        app:layout_constraintTop_toBottomOf="@+id/img_cancel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

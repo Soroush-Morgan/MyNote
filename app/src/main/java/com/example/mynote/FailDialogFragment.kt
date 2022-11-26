@@ -6,6 +6,6 @@ import android.os.Bundle
 class FailDialogFragment: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_fail_dialog)
+        setContentView(R.layout.dialog_fragment_fail)
     }
 }
