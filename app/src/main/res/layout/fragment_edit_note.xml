@@ -68,7 +68,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_more" />
 
-            <androidx.appcompat.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/tv_edit_note_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
