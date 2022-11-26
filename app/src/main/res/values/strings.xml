@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">MyNote</string>
-    <string name="menu_title">Folder List</string>
+    <string name="search_description">Search in the Current Page</string>
+    <string name="refresh_description">Refresh the Current Page</string>
+    <string name="more_description">More Options</string>
+    <string name="back_description">Back to Previous Page</string>
+    <string name="undo_description">Undo an Action</string>
+    <string name="share_description">Share in Social Media</string>
+    <string name="CategoryFragment">CategoryFragment</string>
+    <string name="NoteFragment">NoteFragment</string>
+    <string name="EditNoteFragment">EditNoteFragment</string>
+    <string name="note_list">Note List</string>
+    <string name="category_list">Category List</string>
+    <string name="edit_note_title">Edit Note title</string>
+    <string name="note_hint">Enter your Note Here</string>
     <string name="no_note">There is no note available \n Tap on "+" to add new note</string>
+    <string name="no_category">There is no category available \n Tap on "+" to add new category</string>
     <string name="add_note">Add a new note</string>
 </resources>
