@@ -16,7 +16,6 @@
     <color name="on_error">#FFFFFF</color>
     <color name="error_container">#F9DEDC</color>
     <color name="background">#FDFDF5</color>
-    <color name="background2">#20000000</color>
     <color name="on_background">#1A1C18</color>
     <color name="surface">#FDFDF5</color>
     <color name="on_surface">#1A1C08</color>

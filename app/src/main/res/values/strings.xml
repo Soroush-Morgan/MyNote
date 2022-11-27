@@ -1,13 +1,20 @@
 <resources>
     <string name="app_name">MyNote</string>
     <string name="dialog">Enter your Dialog Here</string>
+    <string name="date_modified">The time that this Modified</string>
+    <string name="counter">(Counter)</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_private_name">Category private Name</string>
     <string name="category_successfully_add_dialog">Category Successfully Added to List</string>
     <string name="category_successfully_remove_dialog">Category Successfully Removed from List</string>
     <string name="category_Failure_add_dialog">Category Failure to Added to List</string>
+    <string name="note_name">Note Name</string>
     <string name="note_successfully_add_dialog">Note Successfully Added to List</string>
     <string name="note_successfully_remove_dialog">Note Successfully Removed from</string>
     <string name="note_Failure_add_dialog">Note Failure to Added to List</string>
     <string name="ok">OK</string>
+    <string name="lock_description">Lock the Category</string>
+    <string name="unlock_description">unLock the Category</string>
     <string name="search_description">Search in the Current Page</string>
     <string name="refresh_description">Refresh the Current Page</string>
     <string name="more_description">More Options</string>
