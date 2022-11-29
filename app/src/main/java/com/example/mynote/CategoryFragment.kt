@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListAdapter
 import androidx.fragment.app.Fragment
-import com.example.mynote.databinding.FragmentNoteBinding
+import com.example.mynote.databinding.FragmentCategoryBinding
 
 
-class NoteFragment : Fragment() {
+class CategoryFragment : Fragment() {
 
-    private var _binding: FragmentNoteBinding? = null
+    private var _binding: FragmentCategoryBinding? = null
     private val binding get() = _binding!!
     private var myAdapter: ListAdapter? = null
 
@@ -20,7 +20,7 @@ class NoteFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentNoteBinding.inflate(inflater, container, false)
+        _binding = FragmentCategoryBinding.inflate(inflater, container, false)
         return binding.root
     }
 
