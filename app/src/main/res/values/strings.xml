@@ -30,5 +30,7 @@
     <string name="note_hint">Enter your Note Here</string>
     <string name="no_note">There is no note available \n Tap on "+" to add new note</string>
     <string name="no_category">There is no category available \n Tap on "+" to add new category</string>
+    <string name="add_category">Add a new category</string>
     <string name="add_note">Add a new note</string>
+    <string name="theme">Change between light and dark mode</string>
 </resources>
