@@ -5,17 +5,20 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 @Entity
-data class Category(
-    @PrimaryKey val cid: Int,
-    @ColumnInfo(name = "CategoryName") var categoryname: String?
+data class Note(
+    @PrimaryKey val nid: Int,
+    @ColumnInfo(name = "NoteName") var notename: String?,
+    @ColumnInfo(name = "ModifiedDate") var modifieddate: String?
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
+        parcel.readString(),
         parcel.readString()
     )
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeInt(cid)
-        parcel.writeString(categoryname)
+        parcel.writeInt(nid)
+        parcel.writeString(notename)
+        parcel.writeString(modifieddate)
     }
     override fun describeContents(): Int {
         return 0

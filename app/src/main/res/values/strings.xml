@@ -14,7 +14,6 @@
     <string name="note_Failure_add_dialog">Note Failure to Added to List</string>
     <string name="ok">OK</string>
     <string name="lock_description">Lock the Category</string>
-    <string name="unlock_description">unLock the Category</string>
     <string name="search_description">Search in the Current Page</string>
     <string name="refresh_description">Refresh the Current Page</string>
     <string name="more_description">More Options</string>

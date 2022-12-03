@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/CategoryActivity">
+    app:startDestination="@id/CategoryFragment">
 
     <fragment
-        android:id="@+id/CategoryActivity"
-        android:name="com.example.mynote.CategoryActivity"
+        android:id="@+id/CategoryFragment"
+        android:name="com.example.mynote.ui.category.CategoryFragment"
         android:label="@string/CategoryFragment"
         tools:layout="@layout/fragment_category">
 
@@ -17,20 +17,20 @@
     </fragment>
     <fragment
         android:id="@+id/NoteFragment"
-        android:name="com.example.mynote.NoteFragment"
+        android:name="com.example.mynote.ui.note.NoteFragment"
         android:label="@string/NoteFragment"
         tools:layout="@layout/fragment_note">
 
         <action
             android:id="@+id/action_NoteFragment_to_CategoryFragment"
-            app:destination="@id/CategoryActivity" />
+            app:destination="@id/CategoryFragment" />
         <action
             android:id="@+id/action_NoteFragment_to_EditNoteFragment"
             app:destination="@id/EditNoteFragment" />
     </fragment>
     <fragment
         android:id="@+id/EditNoteFragment"
-        android:name="com.example.mynote.EditNoteFragment"
+        android:name="com.example.mynote.ui.article.EditNoteFragment"
         android:label="@string/EditNoteFragment"
         tools:layout="@layout/fragment_edit_note">
         <action
